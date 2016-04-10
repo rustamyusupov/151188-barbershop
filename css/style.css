@@ -1,0 +1,785 @@
+body {
+  background: #000000 url("../img/index-bg.jpg") no-repeat center top;
+  color: #ffffff;
+  font-family: "PT Sans Narrow", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  min-width: 960px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: auto;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: auto;
+}
+
+.inner-body {
+  background: #f8f5f2 url("../img/index-info-bg.png");
+  color: #000000;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+}
+
+.main-header {
+  background-color: #000000;
+  color: #ffffff;
+  margin-bottom: 55px;
+}
+
+.navigation-logo {
+  float: left;
+  /* TODO: Зачем дублировать здесь размеры блока, если ниже есть размеры изображения? */
+  height: 24px;
+  margin-right: 20px;
+  margin-top: 22px;
+  width: 111px;
+}
+
+.navigation-logo img {
+  height: 24px;
+  width: 111px;
+}
+
+.main-navigation {
+  float: left;
+  width: 620px;
+}
+
+.main-navigation ul {
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.main-navigation a {
+  color: #ffffff;
+  display: block;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+
+.main-navigation a:hover {
+  background-color: #242424;
+}
+
+.main-navigation-current {
+  position: relative;
+}
+
+.main-navigation-current::after {
+  background-color: #ffffff;
+  bottom: 0;
+  content: "";
+  height: 5px;
+  left: 20px;
+  position: absolute;
+  right: 20px;
+}
+
+.main-navigation-current span {
+  display: block;
+  padding: 25px 20px;
+}
+
+.user-block {
+  float: right;
+  max-width: 140px;
+}
+
+.login {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 25px 20px;
+  padding-left: 50px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.login:hover {
+  background-color: #242424;
+}
+
+.login::before {
+  content: "";
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -5px -5px;
+  height: 16px;
+  left: 20px;
+  opacity: 0.3;
+  position: absolute;
+  top: 27px;
+  width: 18px;
+}
+
+.login:hover::before {
+  opacity: 1;
+}
+
+.breadcrumbs {
+  margin-bottom: 55px;
+}
+
+.breadcrumbs h2 {
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.breadcrumbs-navigation {
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-navigation li {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: top;
+}
+
+.breadcrumbs-navigation a {
+  color: #000000;
+  display: block;
+  margin-right: 15px;
+  padding-right: 25px;
+  position: relative;
+  text-decoration: none;
+}
+
+.breadcrumbs-navigation a:hover {
+  text-decoration: underline;;
+}
+
+.breadcrumbs-navigation a::after {
+  background-color: #000000;
+  right: 0;
+  content: "";
+  display: block;
+  height: 8px;
+  top: 50%;
+  margin-top: -4px;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 8px;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
+
+.index-logo {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  height: 204px;
+  width: 368px;
+}
+
+.index-logo img {
+  height: 204px;
+  width: 368px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.features-name {
+  display: block;
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 30px;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.features-name::after {
+  background-color: #ffffff;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 20px;
+  left: 50%;
+  margin-left: -10px;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 20px;
+}
+
+.features-item p {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.index-info {
+  background: url("../img/index-info-separator.png") no-repeat center,
+    #f8f5f2 url("../img/index-info-bg.png");
+  color: #000000;
+  margin-bottom: 35px;
+  padding: 50px 80px;
+}
+
+.index-info-left {
+  float: left;
+  width: 380px;
+}
+
+.index-info-right {
+  float: right;
+  width: 300px;
+}
+
+.index-info-title {
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.index-info p {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.news-preview {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* TODO: Почему в демке 35 правый паддинг, а у меня меньше 70 никак не выходит? */
+  padding-right: 70px;
+}
+
+.news-preview li {
+  margin-bottom: 25px;
+}
+
+.news-preview p {
+  margin-bottom: 0;
+}
+
+.news-preview time {
+  text-transform: none;
+}
+
+.filter-name {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.producer,
+.items-group {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  padding: 0;
+  width: 170px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  cursor: pointer;
+  display: block;
+  line-height: 24px;
+  margin: 13px 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  content: "";
+  display: block;
+  height: 16px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 16px;
+}
+
+input[type="radio"] + label::before {
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + label::after {
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -5px -31px;
+  content: "";
+  height: 12px;
+  left: 4px;
+  position: absolute;
+  top: 5px;
+  width: 12px;
+}
+
+input[type="radio"]:checked + label::after {
+  background-color: #000000;
+  border-radius: 50%;
+  content: "";
+  height: 8px;
+  left: 6px;
+  position: absolute;
+  top: 7px;
+  width: 8px;
+}
+
+.btn {
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "PT Sans Narrow", "Tahoma", sans-serif;
+  font-size: 14px;
+  /* TODO: Можно ли писать bold вместо 700? */
+  font-weight: bold;
+  line-height: 24px;
+  margin-right: 16px;
+  outline: none;
+  padding: 10px 33px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.btn:active,
+.btn:hover {
+  background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+  background-color: #000000;
+}
+
+.gallery {
+  height: 260px;
+  position: absolute;
+}
+
+.gallery-image {
+  background-color: grey;
+  border: 7px solid #ffffff;
+  height: 164px;
+  margin: 0;
+}
+
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+
+.gallery .btn {
+  bottom: 0;
+  margin: 0;
+  position: absolute;
+  width: 140px;
+}
+
+.gallery-prev {
+  left: 0;
+}
+
+.gallery-next {
+  right: 0;
+}
+
+.registration-form input {
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+  color: #000000;
+  float: left;
+  font-family: "PT Sans Narrow", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 7px 15px;
+  text-transform: uppercase;
+  width: 106px;
+}
+
+.registration-form input:nth-child(even) {
+  margin-right: 0;
+}
+
+.registration-form input:focus {
+  border: 2px solid #663d15;
+}
+
+.registration-form .btn {
+  clear: both;
+  width: 100%;
+}
+
+.goods {
+  margin-bottom: 50px;
+}
+
+.goods-filters{
+  float: left;
+  margin-right: 20px;
+  width: 220px;
+}
+
+.goods-pages {
+  float: left;
+  width: 700px;
+}
+
+.goods-items {
+  margin-bottom: 25px;
+  width: 700px;
+}
+
+.goods-item {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+  float: left;
+  height: 286px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 220px;
+}
+
+.goods-item img {
+  height: 220;
+  width: 165;
+}
+
+.goods-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.item-desc {
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 16px;
+  margin-bottom: 15px;
+  width: 187px;
+}
+
+.item-desc-use {
+  display: block;
+  text-transform: none;
+}
+
+.item-buy {
+  font-size: 0;
+}
+
+.goods-item .item-buy {
+  margin: 0 16px;
+}
+
+.item-buy .price {
+  background-color: #e5e5e5;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 11px 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 109px;
+}
+
+.item-buy .btn {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  padding: 11px 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 78px;
+}
+
+.goods-paginator {
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.goods-paginator li {
+  background-color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  margin-right: 7px;
+  padding: 10px 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 43px;
+}
+
+.goods-paginator .current {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: default;
+}
+
+.goods-paginator a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.item-info {
+  margin-bottom: 50px;
+}
+
+.item-info-left {
+  float: left;
+  margin-right: 80px;
+  width: 460px;
+}
+
+.item-gallery-image {
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.item-gallery-image img {
+  display: block;
+  height: 498px;
+  width: 460px;
+}
+
+.gallery-paginator {
+  margin: 0;
+}
+
+.gallery-paginator img {
+  display: block;
+}
+
+.gallery-paginator-item {
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+  float: left;
+  margin-right: 20px;
+  width: 140px;
+}
+
+.gallery-paginator-item:last-child {
+  margin-right: 0;
+}
+
+.item-info-right {
+  float: right;
+  margin-top: 21px;
+  width: 400px;
+}
+
+.item-right-header {
+  margin-bottom: 33px;
+}
+
+.item-right-header .availability {
+  float: left;
+}
+
+.item-right-header .article {
+  color: #aeaeae;
+  float: right;
+}
+
+.item-right-description p {
+  margin-bottom: 38px;
+}
+
+.item-right-description .item-buy {
+  margin-bottom: 65px;
+}
+
+.item-right-description .item-title {
+  margin-bottom: 33px;
+}
+
+.item-right-description .item-content{
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-content li {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 22px;
+  position: relative;
+  vertical-align: top;
+}
+
+.item-content li::after {
+  background-color: #000000;
+  left: 0;
+  content: "";
+  display: block;
+  height: 8px;
+  top: 50%;
+  margin-left: 2px;
+  margin-top: -4px;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 8px;
+}
+
+.main-footer {
+  background: #252525 url("../img/footer-bg.png");
+  color: #ffffff;
+  margin-top: 65px;
+  padding-bottom: 40px;
+  padding-top: 60px;
+}
+
+.footer-address {
+  float: left;
+  margin-right: 60px;
+  width: 320px;
+}
+
+.footer-address p {
+  margin: 0;
+}
+
+.footer-address a {
+  color: #ffffff;
+}
+
+.footer-address a:hover {
+  text-decoration: none;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  text-align: center;
+}
+
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+  background: #000000 url("../img/sprite.png") no-repeat center;
+  display: inline-block;
+  font-size: 0;
+  height: 43px;
+  margin: 0 2px;
+  text-decoration: none;
+  /* TODO: Почему у меня иконки уезжают вверх, а в демке вниз? */
+  transition:
+    background-position 0.5s,
+    background-color 0.5s;
+  vertical-align: top;
+  width: 43px;
+}
+
+.social-btn:hover {
+  background-color: #ffffff;
+}
+
+.social-vk {
+  background-position: 4px -165px;
+}
+
+.social-fb {
+  background-position: 10px -43px;
+}
+
+.social-ig {
+  background-position: 6px -106px;
+}
+
+.social-vk:hover {
+  background-position: 4px -191px;
+}
+
+.social-fb:hover {
+  background-position: 10px -75px;
+}
+
+.social-ig:hover {
+  background-position: 6px -137px;
+}
+
+.footer-copyright {
+  float: right;
+  max-width: 180px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-copyright .btn {
+  margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
